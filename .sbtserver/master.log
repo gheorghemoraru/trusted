@@ -1,0 +1,584 @@
+New log file opened at Tue Jan 19 22:51:49 CET 2016 by 14978@ggx
+jvm 14978@ggx
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.66-b17
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/home/ggx/projects/trusted
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /home/ggx/projects/trusted/project
+[Loading] Found non-root projects 
+[Loading] Done in /home/ggx/projects/trusted/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /home/ggx/projects/trusted/project, returning: (trusted-build)
+Loading project definition from /home/ggx/projects/trusted/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@9d46599, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /home/ggx/projects/trusted
+[Loading] Found root project root w/ remaining 
+deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.sbt.SbtNativePackager)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager) not found List(play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask) not found List(play.sbt.PlayScala, play.sbt.Play, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
+[Loading] Done in /home/ggx/projects/trusted, returning: (root)
+Set current project to play-scala-intro (in build file:/home/ggx/projects/trusted/)
+Reapplying settings...
+Set current project to play-scala-intro (in build file:/home/ggx/projects/trusted/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/home/ggx/projects/trusted/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a5d5381, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 19, 2016 10:51:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/ggx/projects/trusted/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@22634b56, check cycles: false
+Total time: 0 s, completed Jan 19, 2016 10:51:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/ggx/projects/trusted/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@270c78b3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 19, 2016 10:51:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/ggx/projects/trusted/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@eec059d, check cycles: false
+Total time: 0 s, completed Jan 19, 2016 10:51:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4fddc08e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 9d1956, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/home/ggx/projects/trusted/target/scala-2.11/classes:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/ggx/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/ggx/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/ggx/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-actor_2.11/2.3.13/jars/akka-actor_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.13/jars/akka-slf4j_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/ggx/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/ggx/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/ggx/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/io.netty/netty/3.10.4.Final/bundles/netty.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/home/ggx/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.h2database/h2/jars/h2-1.4.177.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/ggx/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar
+Scala compilation took 1.918494774 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Jan 19, 2016 10:53:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@10ca452f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/ggx/projects/trusted/conf/evolutions,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions)
+	(/home/ggx/projects/trusted/conf/routes,/home/ggx/projects/trusted/target/scala-2.11/classes/routes)
+	(/home/ggx/projects/trusted/conf/messages,/home/ggx/projects/trusted/target/scala-2.11/classes/messages)
+	(/home/ggx/projects/trusted/conf/application.conf,/home/ggx/projects/trusted/target/scala-2.11/classes/application.conf)
+	(/home/ggx/projects/trusted/conf/logback.xml,/home/ggx/projects/trusted/target/scala-2.11/classes/logback.xml)
+	(/home/ggx/projects/trusted/conf/evolutions/default,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions/default)
+	(/home/ggx/projects/trusted/conf/evolutions/default/1.sql,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions/default/1.sql)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'org.scalatest.tools.Framework' not present.
+Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
+Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@404820d1))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@22036545), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@23cc877c))
+Forking tests - parallelism = false
+Create a single-thread test executor
+Runner for org.specs2.runner.Specs2Framework produced 4 initial tasks for 4 tests.
+  Running TaskDef(CVRestClientSpec, sbt.ForkMain$SubclassFingerscan@6a6a1ae4, false, [SuiteSelector])
+IS ALIVE:{"outcome":"success","status":200}
+Read from stdout: CVRestClientSpec
+CVRestClientSpec
+Read from stdout: 
+
+Read from stdout: CV REST API should
+CV REST API should
+Read from stdout: + be online
+  + be online
+TOKEN:AuthToken ApiKey="trusted-001", TokenDigest="MzI0OGI4NGEwMDM1N2IzMzhlYWQzZWI5MDgwMDY5NDU5MmMxNjA3OQ==", Nonce="6e8a09ac589ccc78ee9641cefe459c33", Created="2016-01-19T10:53:17+00:00", Username="lucas.carbonaro@gmail.com", Password="HA1LMnc6AEEyfg=="
+OFFERINGS:{"outcome":"error","data":{"code":80003,"user_message":"Forbidden. Logged-in User is not member of network ","developer_message":"Forbidden. Logged-in User is not member of network ","fields":[]},"status":403}
+Read from stdout: + return offerings
+  + return offerings
+Read from stdout: 
+
+Read from stdout: Total for specification CVRestClientSpec
+Total for specification CVRestClientSpec
+Read from stdout: Finished in 1 second, 644 ms
+Read from stdout: 2 examples, 0 failure, 0 error
+Finished in 1 second, 644 ms
+2 examples, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 2 events.
+  Running TaskDef(ApplicationSpec, sbt.ForkMain$SubclassFingerscan@4488e4c1, false, [SuiteSelector])
+Read from stdout: ApplicationSpec
+ApplicationSpec
+Read from stdout: 
+
+Read from stdout: Application should
+Application should
+Read from stdout: + send 404 on a bad request
+  + send 404 on a bad request
+Read from stdout: + render the index page
+  + render the index page
+Read from stdout: 
+
+Read from stdout: Total for specification ApplicationSpec
+Total for specification ApplicationSpec
+Read from stdout: Finished in 1 second, 64 ms
+Read from stdout: 2 examples, 0 failure, 0 error
+Finished in 1 second, 64 ms
+2 examples, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 2 events.
+  Running TaskDef(CVAuthSpec, sbt.ForkMain$SubclassFingerscan@23f9a7d, false, [SuiteSelector])
+Read from stdout: CVAuthSpec
+CVAuthSpec
+Read from stdout: 
+
+Read from stdout: CV Auth should
+CV Auth should
+Read from stdout: + encrypt passwords
+  + encrypt passwords
+[Token]=AuthToken ApiKey="testapikey-001", TokenDigest="OWNiNjhmMGQyNTE2NTAxZjEwMjM1ZWQwMDY2N2VhMGI2YTkwOGYxMg==", Nonce="5514d1d370d2cff8f05d5e7b770e2844", Created="2016-01-19T10:53:19+00:00", Username="test@test.com", Password="FRVCB0cGAUcA"
+Read from stdout: + create tokens
+  + create tokens
+Read from stdout: 
+
+Read from stdout: Total for specification CVAuthSpec
+Total for specification CVAuthSpec
+Read from stdout: Finished in 4 ms
+Read from stdout: 2 examples, 0 failure, 0 error
+Finished in 4 ms
+2 examples, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 2 events.
+  Running TaskDef(IntegrationSpec, sbt.ForkMain$SubclassFingerscan@ae8ad87, false, [SuiteSelector])
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[An invalid or illegal selector was specified (selector: ':checked' error: Invalid selector: *:checked).] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[An invalid or illegal selector was specified (selector: ':enabled' error: Invalid selector: *:enabled).] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[The data necessary to complete this operation is not yet available.] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[The data necessary to complete this operation is not yet available.] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+Read from stdout: IntegrationSpec
+IntegrationSpec
+Read from stdout: 
+
+Read from stdout: Application should
+Application should
+Read from stdout: + work from within a browser
+  + work from within a browser
+Read from stdout: 
+
+Read from stdout: Total for specification IntegrationSpec
+Total for specification IntegrationSpec
+Read from stdout: Finished in 1 second, 83 ms
+Read from stdout: 1 example, 0 failure, 0 error
+Finished in 1 second, 83 ms
+1 example, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 1 events.
+Runner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.
+Summary for specs2 not available.
+Summary for JUnit not available.
+Read from stdout: Passed: Total 7, Failed 0, Errors 0, Passed 7
+Passed: Total 7, Failed 0, Errors 0, Passed 7
+Passed tests:
+	ApplicationSpec
+	IntegrationSpec
+	CVRestClientSpec
+	CVAuthSpec
+Total time: 6 s, completed Jan 19, 2016 10:53:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@73447624, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/ggx/projects/trusted/app/util/cvauth/CVAuthRestClient.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/classes...
+Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 2f85ec44, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/home/ggx/projects/trusted/target/scala-2.11/classes:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/ggx/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/ggx/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/ggx/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-actor_2.11/2.3.13/jars/akka-actor_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.13/jars/akka-slf4j_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/ggx/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/ggx/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/ggx/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/io.netty/netty/3.10.4.Final/bundles/netty.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/home/ggx/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.h2database/h2/jars/h2-1.4.177.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/home/ggx/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar
+Scala compilation took 0.760866129 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Jan 19, 2016 11:13:43 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5034c4fb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Jan 19, 2016 11:14:09 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@37e6c8b3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/ggx/projects/trusted/conf/evolutions,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions)
+	(/home/ggx/projects/trusted/conf/routes,/home/ggx/projects/trusted/target/scala-2.11/classes/routes)
+	(/home/ggx/projects/trusted/conf/messages,/home/ggx/projects/trusted/target/scala-2.11/classes/messages)
+	(/home/ggx/projects/trusted/conf/application.conf,/home/ggx/projects/trusted/target/scala-2.11/classes/application.conf)
+	(/home/ggx/projects/trusted/conf/logback.xml,/home/ggx/projects/trusted/target/scala-2.11/classes/logback.xml)
+	(/home/ggx/projects/trusted/conf/evolutions/default,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions/default)
+	(/home/ggx/projects/trusted/conf/evolutions/default/1.sql,/home/ggx/projects/trusted/target/scala-2.11/classes/evolutions/default/1.sql)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/ggx/projects/trusted/test/CVRestClientSpec.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/ggx/projects/trusted/test/CVRestClientSpec.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/ggx/projects/trusted/test/CVRestClientSpec.scala)
+
+Read from stdout: Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/test-classes...
+Compiling 1 Scala source to /home/ggx/projects/trusted/target/scala-2.11/test-classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 5d49bf9f, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar
+	-classpath
+	/home/ggx/projects/trusted/target/scala-2.11/test-classes:/home/ggx/projects/trusted/target/scala-2.11/classes:/home/ggx/projects/trusted/target/web/classes/main:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.commons/commons-lang3/3.4/jars/commons-lang3.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe/config/1.3.0/bundles/config.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.6.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/home/ggx/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-actor_2.11/2.3.13/jars/akka-actor_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.13/jars/akka-slf4j_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-codec/commons-codec/1.10/jars/commons-codec.jar:/home/ggx/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/ggx/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/ggx/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject/guice/4.0/jars/guice.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/javax.inject/javax.inject/1/jars/javax.inject.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/io.netty/netty/3.10.4.Final/bundles/netty.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick_2.11/jars/play-slick_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.0.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar:/home/ggx/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.11/bundles/slick-hikaricp_2.11-3.1.0.jar:/home/ggx/.ivy2/cache/com.zaxxer/HikariCP-java6/bundles/HikariCP-java6-2.3.7.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.11/jars/play-slick-evolutions_2.11-1.1.0.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.4.0.jar:/home/ggx/.ivy2/cache/com.h2database/h2/jars/h2-1.4.177.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.guava/guava/18.0/bundles/guava.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/ggx/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-test_2.11/jars/play-test_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/junit/junit/4.12/jars/junit.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.hamcrest/hamcrest-core/1.3/jars/hamcrest-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.novocode/junit-interface/0.11/jars/junit-interface.jar:/home/ggx/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.code.findbugs/jsr305/2.0.3/jars/jsr305.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.fluentlenium/fluentlenium-core/0.10.3/jars/fluentlenium-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-java/2.44.0/jars/selenium-java.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-chrome-driver/2.44.0/jars/selenium-chrome-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-remote-driver/2.44.0/jars/selenium-remote-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/cglib/cglib-nodep/2.1_3/jars/cglib-nodep.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/com.google.code.gson/gson/2.3/jars/gson.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-api/2.44.0/jars/selenium-api.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpclient/4.3.4/jars/httpclient.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpcore/4.3.2/jars/httpcore.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-logging/commons-logging/1.1.3/jars/commons-logging.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.commons/commons-exec/1.1/jars/commons-exec.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.java.dev.jna/jna/3.4.0/jars/jna.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.java.dev.jna/platform/3.4.0/jars/platform.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-htmlunit-driver/2.44.0/jars/selenium-htmlunit-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.sourceforge.htmlunit/htmlunit/2.15/jars/htmlunit.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/xalan/xalan/2.7.1/jars/xalan.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/xalan/serializer/2.7.1/jars/serializer.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-collections/commons-collections/3.2.1/jars/commons-collections.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.apache.httpcomponents/httpmime/4.3.3/jars/httpmime.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.sourceforge.htmlunit/htmlunit-core-js/2.15/jars/htmlunit-core-js.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.sourceforge.nekohtml/nekohtml/1.9.21/jars/nekohtml.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/net.sourceforge.cssparser/cssparser/0.9.14/jars/cssparser.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.w3c.css/sac/1.3/jars/sac.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/commons-io/commons-io/2.4/jars/commons-io.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.eclipse.jetty/jetty-websocket/8.1.15.v20140411/jars/jetty-websocket.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.eclipse.jetty/jetty-util/8.1.15.v20140411/jars/jetty-util.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.eclipse.jetty/jetty-io/8.1.15.v20140411/jars/jetty-io.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.eclipse.jetty/jetty-http/8.1.15.v20140411/jars/jetty-http.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-firefox-driver/2.44.0/jars/selenium-firefox-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-ie-driver/2.44.0/jars/selenium-ie-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-safari-driver/2.44.0/jars/selenium-safari-driver.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.webbitserver/webbit/0.4.14/jars/webbit.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.seleniumhq.selenium/selenium-support/2.44.0/jars/selenium-support.jar:/home/ggx/.ivy2/cache/com.typesafe.play/play-specs2_2.11/jars/play-specs2_2.11-2.4.6.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.specs2/specs2-core_2.11/3.6/jars/specs2-core_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.specs2/specs2-matcher_2.11/3.6/jars/specs2-matcher_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.specs2/specs2-common_2.11/3.6/jars/specs2-common_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scalaz/scalaz-core_2.11/7.1.1/bundles/scalaz-core_2.11.jar:/home/ggx/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.2.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scalaz/scalaz-concurrent_2.11/7.1.1/bundles/scalaz-concurrent_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scalaz/scalaz-effect_2.11/7.1.1/bundles/scalaz-effect_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scalaz.stream/scalaz-stream_2.11/0.7a/bundles/scalaz-stream_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.scodec/scodec-bits_2.11/1.0.6/bundles/scodec-bits_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.specs2/specs2-junit_2.11/3.6/jars/specs2-junit_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.specs2/specs2-mock_2.11/3.6/jars/specs2-mock_2.11.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.mockito/mockito-core/1.9.5/jars/mockito-core.jar:/home/ggx/tools/activator/activator-dist-1.3.7/repository/org.objenesis/objenesis/1.0/jars/objenesis.jar
+Scala compilation took 1.682236085 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'org.scalatest.tools.Framework' not present.
+Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
+Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@7092c31e))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@674f111f), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@4c7cdf5b))
+Forking tests - parallelism = false
+Create a single-thread test executor
+Runner for org.specs2.runner.Specs2Framework produced 4 initial tasks for 4 tests.
+  Running TaskDef(CVRestClientSpec, sbt.ForkMain$SubclassFingerscan@6a6a1ae4, false, [SuiteSelector])
+IS ALIVE:{"outcome":"error","data":{"code":15001,"user_message":"Bad request. Authentication header not recognized.","developer_message":"Bad request. cv-auth header not recognized.","fields":[]},"status":400}
+Read from stdout: CVRestClientSpec
+CVRestClientSpec
+Read from stdout: 
+
+Read from stdout: CV REST API should
+CV REST API should
+Read from stdout: + be online
+  + be online
+Read from stdout: 
+
+Read from stdout: Total for specification CVRestClientSpec
+Total for specification CVRestClientSpec
+Read from stdout: Finished in 1 second, 408 ms
+Read from stdout: 1 example, 0 failure, 0 error
+Finished in 1 second, 408 ms
+1 example, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 1 events.
+  Running TaskDef(ApplicationSpec, sbt.ForkMain$SubclassFingerscan@2eab413a, false, [SuiteSelector])
+Read from stdout: ApplicationSpec
+ApplicationSpec
+Read from stdout: 
+
+Read from stdout: Application should
+Application should
+Read from stdout: + send 404 on a bad request
+  + send 404 on a bad request
+Read from stdout: + render the index page
+  + render the index page
+Read from stdout: 
+
+Read from stdout: Total for specification ApplicationSpec
+Total for specification ApplicationSpec
+Read from stdout: Finished in 1 second, 20 ms
+Read from stdout: 2 examples, 0 failure, 0 error
+Finished in 1 second, 20 ms
+2 examples, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 2 events.
+  Running TaskDef(CVAuthSpec, sbt.ForkMain$SubclassFingerscan@4048cefb, false, [SuiteSelector])
+Read from stdout: CVAuthSpec
+CVAuthSpec
+Read from stdout: 
+
+Read from stdout: CV Auth should
+CV Auth should
+Read from stdout: + encrypt passwords
+  + encrypt passwords
+[Token]=AuthToken ApiKey="testapikey-001", TokenDigest="MjhhNWZlMjA4ODUzYjhjMzZhNzI2MWI4MWU4NjZiYzYxMjhjNmE4Mg==", Nonce="9377a414f7f3df77005417f12b069f1f", Created="2016-01-19T11:14:19+00:00", Username="test@test.com", Password="FRVCB0cGAUcA"
+Read from stdout: + create tokens
+  + create tokens
+Read from stdout: 
+
+Read from stdout: Total for specification CVAuthSpec
+Total for specification CVAuthSpec
+Read from stdout: Finished in 3 ms
+Read from stdout: 2 examples, 0 failure, 0 error
+Finished in 3 ms
+2 examples, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 2 events.
+  Running TaskDef(IntegrationSpec, sbt.ForkMain$SubclassFingerscan@4b74d47e, false, [SuiteSelector])
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[An invalid or illegal selector was specified (selector: ':checked' error: Invalid selector: *:checked).] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[An invalid or illegal selector was specified (selector: ':enabled' error: Invalid selector: *:enabled).] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[The data necessary to complete this operation is not yet available.] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+[error] - com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter - runtimeError: message=[The data necessary to complete this operation is not yet available.] sourceName=[http://localhost:19001/assets/javascripts/jquery-1.11.3.min.js] line=[2] lineSource=[null] lineOffset=[0]
+Read from stdout: IntegrationSpec
+IntegrationSpec
+Read from stdout: 
+
+Read from stdout: Application should
+Application should
+Read from stdout: + work from within a browser
+  + work from within a browser
+Read from stdout: 
+
+Read from stdout: Total for specification IntegrationSpec
+Total for specification IntegrationSpec
+Read from stdout: Finished in 1 second, 159 ms
+Read from stdout: 1 example, 0 failure, 0 error
+Finished in 1 second, 159 ms
+1 example, 0 failure, 0 error
+Read from stdout: 
+
+    Produced 0 nested tasks and 1 events.
+Runner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.
+Summary for specs2 not available.
+Summary for JUnit not available.
+Read from stdout: Passed: Total 6, Failed 0, Errors 0, Passed 6
+Passed: Total 6, Failed 0, Errors 0, Passed 6
+Passed tests:
+	ApplicationSpec
+	IntegrationSpec
+	CVRestClientSpec
+	CVAuthSpec
+Total time: 7 s, completed Jan 19, 2016 11:14:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
