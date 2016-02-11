@@ -14,16 +14,16 @@ class CVAuthSpec extends Specification {
 
     val targetLen = 16;
     
-    var apiKey = "testapikey-001"
-    var apiSecret = "ap1s3cr3t"
-    var username = "test@test.com"
-    var password = "testtest"
-    var network = "testnetwork"
-    var apiBase = "https://sandbox.crowdvalley.com/v1"
+    var apiKey = "trusted-001"
+    var apiSecret = "uY1B1Uh9G2"
+    var username = "lucas.carbonaro@gmail.com"
+    var password = "iTzpFohxuL"
+    var network = "trusted"
+    var apiBase = "https://api.sandbox.crowdvalley.com/v1"
     var apiBasicUsername = ""
     var apiBasicPassword = ""
     
-    val targetPass = "FRVCB0cGAUcA"
+    val targetPass = "HA1LMnc6AEEyfg=="
 
     "CV Auth" should {
 

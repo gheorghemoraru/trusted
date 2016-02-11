@@ -41,6 +41,23 @@ object CVRestClientSpec extends Specification {
             }
           
         }
+        
+        "get offerings" in {
+            
+            Server.withRouter() {
+                case GET(p"/repositories") => Action {
+                    Results.Ok(Json.arr(Json.obj("full_name" -> "octocat/Hello-World")))
+                }
+            } { implicit port =>
+                play.api.test.WsTestClient.withClient { client =>
+                    val result = Await.result(
+                        new CVAuthRestClient(client).getOfferings(), 10.seconds)
+                    println("OFFERINGS:"+result)
+                    result must_== result
+                }
+            }
+          
+        }
        
 
   }

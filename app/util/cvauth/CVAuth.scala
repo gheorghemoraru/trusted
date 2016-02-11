@@ -57,9 +57,15 @@ object CVAuth {
     
         var userPass64 = new sun.misc.BASE64Encoder().encode(userPass.getBytes)
         var created = getW3CDate();
-        var sha1 = play.api.libs.Codecs.sha1(nonce + created + apiSecret);
+        
+        var toDigest = nonce + created + apiSecret
+        
+        var sha1 = play.api.libs.Codecs.sha1(toDigest);
     
-        var digest = new sun.misc.BASE64Encoder().encode(sha1.getBytes)
+        var sha1_md = java.security.MessageDigest.getInstance("SHA-1")
+        var digest = new sun.misc.BASE64Encoder().encode(sha1_md.digest(toDigest.getBytes))
+        
+        //var digest = new sun.misc.BASE64Encoder().encode(sha1.getBytes)
     
         var token = "AuthToken ApiKey=\"" + apiKey + "\", TokenDigest=\"" +
         digest + "\", Nonce=\""+ nonce + "\", Created=\"" + created + "\", Username=\"" + 
